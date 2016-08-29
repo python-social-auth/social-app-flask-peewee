@@ -11,16 +11,16 @@ def load_requirements():
     return open(join(dirname(__file__), 'requirements.txt')).readlines()
 
 setup(
-    name='python-social-auth-app-flask-mongoengine',
-    version=__import__('social_flask_mongoengine').__version__,
+    name='social-auth-app-flask-peewee',
+    version=__import__('social_flask_peewee').__version__,
     author='Matias Aguirre',
     author_email='matiasaguirre@gmail.com',
-    description='Python Social Authentication, Mongoengine Flask '
+    description='Python Social Authentication, peewee Flask '
                 'models integration.',
     license='BSD',
-    keywords='flask, mongoengine, social auth',
-    url='https://github.com/python-social-auth/social-app-flask-mongoengine',
-    packages=['social_flask_mongoengine'],
+    keywords='flask, peewee, social auth',
+    url='https://github.com/python-social-auth/social-app-flask-peewee',
+    packages=['social_flask_peewee'],
     long_description=long_description(),
     install_requires=load_requirements(),
     classifiers=[
