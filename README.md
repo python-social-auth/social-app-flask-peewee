@@ -9,8 +9,7 @@ This is the [Flask](http://flask.pocoo.org/) component of the
 [python-social-auth ecosystem](https://github.com/python-social-auth/social-core),
 it implements the needed functionality to integrate
 [python-social-auth-core](https://github.com/python-social-auth/social-core)
-in a Flask based project using [SQLAlchemy](http://www.sqlalchemy.org/) by
-default.
+in a Flask based project using [Mongoengine](http://mongoengine.org/) storage.
 
 ## Documentation
 

@@ -1,2 +1,2 @@
 six
-python-social-auth-core
+python-social-auth-app-flask
