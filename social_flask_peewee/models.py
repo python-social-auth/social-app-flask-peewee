@@ -6,6 +6,7 @@ from social_peewee.storage import PeeweeUserMixin, \
                                   PeeweeAssociationMixin, \
                                   PeeweeNonceMixin, \
                                   PeeweeCodeMixin, \
+                                  PeeweePartialMixin, \
                                   BasePeeweeStorage, \
                                   database_proxy
 
@@ -15,6 +16,7 @@ class FlaskStorage(BasePeeweeStorage):
     nonce = None
     association = None
     code = None
+    partial = None
 
 
 def init_social(app, db):
@@ -39,6 +41,11 @@ def init_social(app, db):
         pass
 
     class Code(PeeweeCodeMixin):
+        """Mail validation single one time use code"""
+        pass
+
+    class Partial(PeeweePartialMixin):
+        """Partial pipeline storage"""
         pass
 
     # Set the references in the storage class
@@ -46,3 +53,4 @@ def init_social(app, db):
     FlaskStorage.nonce = Nonce
     FlaskStorage.association = Association
     FlaskStorage.code = Code
+    FlaskStorage.partial = Partial
