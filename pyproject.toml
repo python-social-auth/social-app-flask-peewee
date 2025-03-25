@@ -1,0 +1,46 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=78.0.2"]
+
+[project]
+authors = [
+  {name = "Matias Aguirre", email = "matiasaguirre@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Topic :: Internet",
+  "Intended Audience :: Developers",
+  "Environment :: Web Environment",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3"
+]
+dependencies = [
+  "social-auth-app-flask >= 1.0.0",
+  "social-auth-storage-peewee >= 1.0.0"
+]
+description = "Python Social Authentication, peewee Flask models integration."
+dynamic = ["version"]
+keywords = [
+  "flask",
+  "peewee",
+  "social",
+  "auth"
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+name = "social-auth-app-flask-peewee"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/python-social-auth/social-app-flask-peewee"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+  "social_flask_peewee"
+]
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = {attr = "social_peewee.__version__"}
