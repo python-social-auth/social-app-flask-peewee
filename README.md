@@ -13,7 +13,7 @@ in a Flask based project using [Peewee](http://docs.peewee-orm.com/) storage.
 
 ## Documentation
 
-Project documentation is available at https://python-social-auth.readthedocs.io/.
+Project documentation is available at <https://python-social-auth.readthedocs.io/>.
 
 ## Setup
 
